@@ -1,0 +1,6 @@
+@import "../../variables.scss";
+/**navbar**/
+  nav.mk-head{
+    background-color: $green-01;
+    background-image: linear-gradient($green-01, darken($green-01, 20%));
+  }
