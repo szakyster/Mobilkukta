@@ -1,0 +1,166 @@
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-8">
+      <h2>Bableves szerkesztése</h2>
+    </div>
+  </div>
+  <form>
+    <div class="row">
+      <div class="col-12 mb-3">
+        <div class="card">
+          <div class="card-header">Alapadatok</div>
+          <div class="card-body">
+            <div class="form-group row">
+              <label for="name" class="col-2">Név</label>
+              <input type="text" class="form-control col-9" id="name" placeholder="Név" value="Bableves" minlength="3">
+            </div>
+            <div class="form-group row">
+              <label for="type" class="col-2">Tipus</label>
+              <select name="type" id="type" class="form-control col-9">
+                <option></option>
+                <option selected>Leves</option>
+                <option>Főzelék</option>
+                <option>Sült</option>
+                <option>Köret</option>
+                <option>Édesség</option>
+                <option>Egytálétel</option>
+              </select>
+            </div>
+            <div class="form-group row">
+              <label for="description" class="col-2">Leírás</label>
+              <textarea class="form-control col-9" id="description">Bavleves a klasszikus recept szerint, nem jókai!</textarea>
+            </div>
+            <div class="row">
+              <div class="col-2">Képek</div>
+              <div class="col-9 p-0">
+                <img class="rounded border p-1" src="img/bableves-orig.jpg" alt="">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-12 mb-3">
+        <div class="card">
+          <div class="card-header">Hozzávalók</div>
+          <div class="card-body">
+            <ul class="list-group list-group-flush">
+              <li class="list-group-item">
+                <div class="input-group col-8 my-2">
+                  <input type="text" class="form-control" placeholder="Hozzávaló-csoport" value="Tészta">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" disabled type="button">&uarr;</button>
+                    <button class="btn btn-secondary" type="button">&darr;</button>
+                    <button class="btn btn-danger" type="button">&times;</button>
+                  </div>
+                </div>
+
+                <div class="input-group col-6 offset-sm-1 mb-1">
+                  <input type="text" class="form-control" placeholder="Hozzávaló" value="1 kg kutya">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button" disabled>&uarr;</button>
+                    <button class="btn btn-secondary" type="button">&darr;</button>
+                    <button class="btn btn-danger" type="button">&times;</button>
+                  </div>
+                </div>
+
+                <div class="input-group col-6 offset-sm-1 mb-1">
+                  <input type="text" class="form-control" placeholder="Hozzávaló" value="Fél gerezd fokalma">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">&uarr;</button>
+                    <button class="btn btn-secondary" type="button">&darr;</button>
+                    <button class="btn btn-danger" type="button">&times;</button>
+                  </div>
+                </div>
+
+                <div class="input-group col-6 offset-sm-1 mb-1">
+                  <input type="text" class="form-control" placeholder="Hozzávaló" value="Liter friss tej">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">&uarr;</button>
+                    <button class="btn btn-secondary" type="button">&darr;</button>
+                    <button class="btn btn-danger" type="button">&times;</button>
+                  </div>
+                </div>
+
+                <div class="input-group col-6 offset-sm-1 mb-1">
+                  <input type="text" class="form-control" placeholder="Hozzávaló" value="Darált dióbél">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">&uarr;</button>
+                    <button class="btn btn-secondary" type="button">&darr;</button>
+                    <button class="btn btn-danger" type="button">&times;</button>
+                  </div>
+                </div>
+
+                <div class="input-group col-6 offset-sm-1 mb-1">
+                  <input type="text" class="form-control" placeholder="Hozzávaló" value="Barlangi medvetalp">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">&uarr;</button>
+                    <button class="btn btn-secondary" type="button" disabled>&darr;</button>
+                    <button class="btn btn-danger" type="button">&times;</button>
+                  </div>
+                </div>
+                <div class="input-group col-6 offset-sm-1 justify-content-end">
+                  <button class="btn btn-primary" type="button">Új hozzávaló</button>
+                </div>
+              </li>
+
+              <li class="list-group-item">
+                <div class="input-group col-8 my-2">
+                  <input type="text" class="form-control" placeholder="Hozzávaló-csoport" value="Leves">
+                  <div class="input-group-append">
+                    <button class="btn btn-secondary" type="button">&uarr;</button>
+                    <button class="btn btn-secondary" type="button" disabled>&darr;</button>
+                    <button class="btn btn-danger" type="button">&times;</button>
+                  </div>
+                </div>
+                <div class="input-group col-6 offset-sm-1 justify-content-end">
+                  <button class="btn btn-primary mr-2" type="button">Új hozzávaló-csoport</button>
+                  <button class="btn btn-primary" type="button">Új hozzávaló</button>
+                </div>
+              </li>
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div> <!-- end row-->
+    <div class="row">
+      <div class="col-12 mb-3">
+        <div class="card">
+          <div class="card-header">Elkészítés</div>
+          <div class="card-body">
+            <div class="row mb-1">
+              <div class="col-1 text-right mk-counter">1.</div>
+              <div class="col-8">
+                <textarea class="form-control">Forró gőz fölött megpuhítjuk a pumkedlit, és 100 fokos sütőbe düszdeljük. Előkészítjük a párkát, meglovasítjuk a pupajkát, és nem feledkezünk el a szörcsenetről sem.</textarea>
+              </div>
+            </div>
+
+            <div class="row mb-1">
+              <div class="col-1 text-right mk-counter">2.</div>
+              <div class="col-8">
+                <textarea class="form-control">Az alkatrészeket összekeverjük, pihentetjük, majd csokoládés deszkán 3 mikron vastagságúra
+                                      gyúrjuk.</textarea>
+              </div>
+            </div>
+
+            <div class="row mb-1">
+              <div class="input-group col-6 offset-sm-3 justify-content-end">
+                <button class="btn btn-primary" type="button">Új Lépés</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </form>
+
+</div>
+
+<div class="position-fixed mk-action-window rounded-left border p-2">
+  <button class="btn btn-primary mb-1 w-75" type="button">Mentés</button>
+  <button class="btn btn-danger w-75" type="button">Törlés</button>
+</div>

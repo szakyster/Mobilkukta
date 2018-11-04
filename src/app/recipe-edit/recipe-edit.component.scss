@@ -1,0 +1,12 @@
+@import "../../variables.scss";
+.mk-counter {
+    font-size: 2rem;
+    color: $green-01;
+    font-weight: bold;
+  }
+
+  .mk-action-window{
+    width: 8rem; 
+    right: 0; 
+    top: 30%;background-color: white;
+  }
