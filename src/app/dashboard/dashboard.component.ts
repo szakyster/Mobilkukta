@@ -1,4 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { Observable } from 'rxjs';
+import { Recipe } from '../shared/recipe.model';
+import { RecipeService } from '../recipe.service';
 
 @Component({
   selector: 'dashboard',
@@ -7,9 +10,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
-  constructor() { }
+  $recipeTop2: Observable<Recipe[]>;
+
+  constructor(private recipeService: RecipeService) { }
 
   ngOnInit() {
+    this.$recipeTop2 = this.recipeService.GetTopRecipe(2);
   }
 
 }
