@@ -2,15 +2,15 @@
   <h2>Recepjeim</h2>
   <div class="row">
 
-    <div class="card col-3 m-3" *ngFor="let n of [].constructor(9)" (click)="goView()">
+    <div class="card col-3 m-3" *ngFor="let item of $recipes | async" (click)="goView()">
       <img class="card-img-top" src="assets/img/bableves-orig-lapos.jpg" />
       <div class="card-body">
-        <strong class="d-inline-block mb-2 text-primary">Leves</strong>
+        <strong class="d-inline-block mb-2 text-primary">{{item.Type}}</strong>
         <h3 class="mb-0">
-          Bableves
+          {{item.Name}}
         </h3>
-        <p class="card-text mb-2">Bavleves a klasszikus recept szerint, nem jókai!</p>
-        <button class="btn btn-primary float-right" (click)="goEdit()">Szerkeszt</button>1
+        <p class="card-text mb-2">{{item.Description}}</p>
+        <button class="btn btn-primary float-right" (click)="goEdit(item)">Szerkeszt</button>
       </div>
     </div>
 

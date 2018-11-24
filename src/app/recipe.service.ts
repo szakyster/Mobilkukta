@@ -18,24 +18,28 @@ export class RecipeService {
     Name: 'Bableves',
     Description: 'Bavleves a klasszikus recept szerint, nem jókai!',
     Type: 'Leves',
-    ImageUrls: ['bableves']
+    ImageUrls: ['bableves'],
+    Link: 'bableves'
   },
   {
     Name: 'Rántott hús',
     Description: 'Rántott hús sertéskarajból',
     Type: 'Hús feltét',
-    ImageUrls: ['bableves']
+    ImageUrls: ['bableves'],
+    Link: 'rantotthus'
   },
   {
     Name: 'Fokhagymás tejszínes wok',
     Description: 'A wokos receptgyüjteményből',
     Type: 'Hús feltét',
-    ImageUrls: ['bableves']
+    ImageUrls: ['bableves'],
+    Link: 'fokhagymastejszineswok'
   }, {
     Name: 'Citrompite',
     Description: 'Rántott hús sertéskarajból',
     Type: 'Hús feltét',
-    ImageUrls: ['bableves']
+    ImageUrls: ['bableves'],
+    Link: 'citrompites'
   }];
 
   public GetRecipeList(): Observable<Recipe[]> {

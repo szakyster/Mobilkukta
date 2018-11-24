@@ -3,4 +3,5 @@ export class Recipe {
     Description: string;
     ImageUrls: string[];
     Type: string;
+    Link: string;
 }
